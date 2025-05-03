@@ -8,6 +8,7 @@ Dear Naela,
 Selamat ulang tahun yang ke 18! 🎉
 semoga semua yang kamu ingin capai bisa tercapai di tahun ini.
 menjadi pribadi yang lebih baik, lebih dewasa, dan lebih bisa mengontrol emosi.
+panjang umur, sehat selalu, dan bahagia selalu.
 jangan lupa ibadah.
 
 -Farrel :)
