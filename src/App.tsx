@@ -30,10 +30,8 @@ const App = () => {
         duration: 0.8,
         ease: 'power2.in',
         onComplete: () => {
-          // Setelah animasi keluar selesai, tampilkan Letter
           setShowLetter(true)
 
-          // Reset posisi dan animasi masuk
           gsap.fromTo(
             containerRef.current,
             { opacity: 0, y: 50 },
