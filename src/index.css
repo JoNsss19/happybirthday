@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Comic Relief", sans-serif;
-  background-color: #ffffff;
+  background-color: #ff8989;
 }
 
 .hero {
@@ -26,7 +26,6 @@ body {
   justify-items: center;
   align-items: center;
   position: absolute;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -38,6 +37,7 @@ body {
   flex-direction: column; 
   align-items: center; 
   text-align: center;
+  position: relative;
 }
 
 .hero-content img {
@@ -136,12 +136,12 @@ body {
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   min-height: 600px;
   font-family: 'Courier New', Courier, monospace;
   white-space: pre-wrap;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
   backface-visibility: hidden; 
   transform-style: preserve-3d;
   z-index: 1;
@@ -149,6 +149,7 @@ body {
 }
 
 .typed-text {
+  white-space: pre-wrap;
   margin: 0;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -180,6 +181,37 @@ body {
 }
 
 
+@media screen and (max-width: 1200px) {
+  .letter-box {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    min-height: 500px;
+  }
+
+  .typed-text {
+    font-size: 1.5rem;
+  }
+  html, body {
+    overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+  .letter-box {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    min-height: 400px;
+  }
+
+  .typed-text {
+    font-size: 1.2rem;
+  }
+  html, body {
+    overflow-x: hidden;
+    }
+}
+  
+
 @media (max-width: 480px) {
   .letter-box {
     padding: 1.2rem;
@@ -189,5 +221,40 @@ body {
 
   .typed-text {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-content {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .hero-content img {
+    width: 100px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emoji {
+    font-size: 5rem;
   }
 }

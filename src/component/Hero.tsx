@@ -60,7 +60,7 @@ const Hero = ({ onOpenLetter }: HeroProps) => {
     <section className='hero'>
         {/* 🎂 Flying Emojis */}
       <div className="emoji-container" ref={emojiContainerRef}>
-        {Array.from({ length: 30 }).map((_, i) => (
+        {Array.from({ length: 20 }).map((_, i) => (
           <span className="emoji" key={i}>
             {emojiList[Math.floor(Math.random() * emojiList.length)]}
           </span>
